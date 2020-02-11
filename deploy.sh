@@ -22,4 +22,7 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:tu6ge/voyager-doc-zh-CN.git master:gh-pages
 
-cd -
+cd ..
+rm -rf dist
+
+cd ../../
