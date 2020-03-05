@@ -1,6 +1,6 @@
 module.exports = { 
     title:"voyager",
-    base: process.env.NODE_ENV === 'production'  ? '/voyager-doc-zh-CN/':'/',
+    base: process.env.NODE_ENV === 'production'  ? '/':'/',
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
