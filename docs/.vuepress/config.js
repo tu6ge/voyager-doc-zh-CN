@@ -62,7 +62,8 @@ module.exports = {
                             '/bread/formfields/dropdown.md',
                             '/bread/formfields/images.md',
                             '/bread/formfields/media-picker.md',
-                            '/bread/formfields/number.md'
+                            '/bread/formfields/number.md',
+                            '/bread/formfields/tinymce.md'
                         ]
                     }
                 ]

@@ -1,34 +1,36 @@
-# Upgrading
+# 升级指南
 
-## Upgrading 1.2 to 1.3
+## 从 1.3 升级到 1.4 
 
-{% hint style="info" %}
-Please take a look at our [prerequisites](../getting-started/prerequisites.md) before upgrading!
-{% endhint %}
+::: warning tip
+升级前，请先查看我们的[安装前提](prerequisites.md)
+:::
 
-### Update your Composer.json
+### 更新你的 Composer.json
 
-To update to the latest version inside of your composer.json file make sure to update the version of Voyager inside the require declaration inside of your composer.json to:
+要更新到 composer.json 文件内的最新版本，请确保将 composer.json 内的 require 声明内的 Voyager 版本更新为:
 
-`tcg/voyager": "1.3.*`
+`tcg/voyager": "1.4.*`
 
-And then run `composer update`
+然后运行  `composer update`
 
-### Changes to VoyagerAuth
-The `VoyagerAuth` singleton was introduced in Voyager 1.2 and returned an instance of the guard.  
-In Voyager 1.3 this singleton was renamed to `VoyagerGuard` and now returns the name of the guard as a string.
-Read more on custom guards [here](../customization/custom-guard.md)
 
-## Update Configuration
-The `voyager.php` configuration file had a few changes.  
+### 升级你的 BREAD 角色
 
-```
-'user' => [
-    'namespace' => null,
-],
-```
-was removed. The user-model which will be used in the `voyager:admin` command is now determined based on the [guard](../customization/custom-guard.md).
+角色BREAD现在使用它自己的控制器。
 
-### Troubleshooting
+请更新以使用它 `TCG\Voyager\Http\Controllers\VoyagerRoleController`
 
-Be sure to ask us on our slack channel if you are experiencing any issues and we will try and assist. Thanks.
+![](../img/upgrading_roles_controller.png)
+
+### TinyMCE 初始化
+
+
+
+初始化操作已经从 app.js 中移除，取而代之的是使用 rich_text_box 模板，如果在标准模板之外使用TinyMCE，请查看文档
+ [TinyMCE](/bread/formfields/tinymce.md)
+
+
+### 故障排除
+
+如果您遇到任何问题，请务必在我们的slack频道询问我们，我们将尽力提供帮助。谢谢。
