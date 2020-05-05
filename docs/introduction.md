@@ -1,6 +1,6 @@
 # 简介
 
-欢迎使用1.3版的Voyager文档。本文档将教您如何安装，配置和使用Voyager
+欢迎使用1.4版的Voyager文档。本文档将教您如何安装，配置和使用Voyager
 
 [*演示地址*](http://voyager.xiaoqiezi.top/admin)
 

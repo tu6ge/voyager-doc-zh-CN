@@ -46,6 +46,10 @@ class VoyagerCategoriesController extends \TCG\Voyager\Http\Controllers\VoyagerB
 
 ## 重写 Voyagers 控制器
 
+::: warning 只有当你知道自己在做什么时才使用这种方法
+我们不建议或支持重写所有控制器，因为您在以后的更新中不会得到任何代码更改
+:::
+
 如果要覆盖任何Voyagers核心控制器，首先必须更改配置文件`config/voyager.php`
 
 ```php

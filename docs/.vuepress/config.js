@@ -96,7 +96,6 @@ module.exports = {
                     '/customization/additional-css-js.md',
                     '/customization/enabling-soft-delete.md',
                     '/customization/custom-realtionship-attributes.md',
-                    '/customization/tinymce.md',
                     '/customization/adding-custom-formfields.md',
                     '/customization/coordinates.md',
                     '/customization/bread-accessors.md',
